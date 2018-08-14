@@ -16,7 +16,7 @@ Shopping only needs to send a link to the robot, and the robot can immediately g
 ## Function realization
 
 ### WeChat robot
-This module can see the latest code [WeChatBot] (https://github.com/546669204/wechatbot-xposed)
+This module can see the latest code [WeChatBot](https://github.com/546669204/wechatbot-xposed)
 - [x] message callback
 - [x] auto reply message
 - [x] Add friend callback
@@ -45,7 +45,7 @@ This module can see the latest code [WeChatBot] (https://github.com/546669204/we
 
 ## Run
 
-- Download [latest version of server] (https://github.com/546669204/RebateBot/releases) and [latest version of WeChat robot] (https://github.com/546669204/wechatbot-xposed/releases)
+- Download [latest version of server](https://github.com/546669204/RebateBot/releases) and [latest version of WeChat robot](https://github.com/546669204/wechatbot-xposed/releases)
 - Open the primary server
 - Install WeChatBot in mobile phones
 - Visit http://IP:1778 for alimama login
