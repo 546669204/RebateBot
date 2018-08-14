@@ -1,0 +1,33 @@
+{
+    "services":[
+        {"name":"msgprocess","run":1},
+        {"name":"alimama","run":1},
+        {"name":"wechat","run":0}
+    ],
+    "routing":{
+        "init":"init",
+        "welogin":"wechat.login",
+        "tblogin":"alimama.login",
+        "wechecklogin":"wechat.checklogin",
+        "tbchecklogin":"alimama.checklogin",
+        "msgprocess":"msgprocess.msgprocess",
+        "wenotify":"wechat.notify",
+        "wegetusername":"wechat.getusername",
+        "tbsearch":"alimama.search",
+        "settuiguang":"alimama.settuiguang",
+        "reverse":"reverse",
+        "getservice":"getservice",
+        "msgreturn":"msgreturn",
+        "reboot":"reboot",
+        "sendfilemsg":"wechat.sendfilemsg",
+        "sendtextmsg":"wechat.sendtextmsg",
+        "setremark":"wechat.setremark",
+        "getuserdata":"msgprocess.getuserdata",
+        "getorderdata":"msgprocess.getorderdata",
+        "setwechatuser":"msgprocess.setwechatuser",
+        "getwechatuser":"wechat.getwechatuser",
+        "parsexls":"msgprocess.parsexls",
+        "getordernum":"alimama.getordernum",
+        "initcontact":"msgprocess.initcontact"
+    }
+}
