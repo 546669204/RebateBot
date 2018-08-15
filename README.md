@@ -95,4 +95,4 @@ Go run master.go
 
 ## Update log
 
-[CHANGELOG](https://github.com/546669204/RebateBot/CHANGELOG)
+[CHANGELOG](https://github.com/546669204/RebateBot/blob/master/CHANGELOG)
