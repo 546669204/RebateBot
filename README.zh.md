@@ -97,6 +97,6 @@ go run master.go
 
 ## 更新日志 
 
-[CHANGELOG](https://github.com/546669204/RebateBot/CHANGELOG)
+[CHANGELOG](https://github.com/546669204/RebateBot/blob/master/CHANGELOG)
 
 
