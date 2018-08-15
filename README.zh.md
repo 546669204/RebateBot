@@ -11,7 +11,7 @@
 利用闲置微信和极小的电脑性能开启24小时无人轮值返利机器人  
 购物只需要发送链接给机器人，机器人能马上给你回复优惠价格及链接 
 
-<img src="https://github.com/546669204/RebateBot/screenshots/demo.png" style="width:500px" />  
+<img src="https://github.com/546669204/RebateBot/blob/master/screenshots/demo.png" style="width:500px" />  
 
 ---
 
