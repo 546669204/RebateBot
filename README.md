@@ -1,5 +1,7 @@
 # RebateBot 
- 
+  
+[中文版](https://github.com/546669204/RebateBot/blob/master/README.zh.md)  
+
 ## project description
 Keywords: rebate WeChat Alimama robot cross platform
 
