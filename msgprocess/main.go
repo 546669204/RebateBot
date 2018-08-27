@@ -48,6 +48,12 @@ var EmojiTo gjson.Result
 var sess sqlbuilder.Database
 var StatusTo map[string]int64
 
+type SettingModel struct {
+	TuLing bool //图灵机器人
+}
+
+var Setting SettingModel
+
 func main() {
 
 	go initWebApi()
@@ -88,8 +94,15 @@ func main() {
 		log.Fatal(err)
 	}
 
-	//Mysql 连接
+	//setting
+	setjsstr, err := ioutil.ReadFile(filepath.Join(filepath.Dir(os.Args[0]), "database.json"))
+	if err != nil {
+		log.Println("读取配置项出错.程序自动退出")
+		os.Exit(1)
+	}
+	Setting.TuLing = gjson.ParseBytes(setjsstr).Get("tuling").Bool()
 
+	//Mysql 连接
 	initMysqlSetting()
 	sess, err = mysql.Open(mysqlsettings)
 	if err != nil {
@@ -213,7 +226,7 @@ func msgprocess(data common.Msg) {
 				Client.ConnWrite(msg)
 				return
 			}
-			if true {
+			if Setting.TuLing {
 				var msg common.Msg
 				msg.To = data.To
 				msg.Data = fmt.Sprintf(`{"content":"%s","to":"%s"}`, TuLingRobot(takler, content), takler)
