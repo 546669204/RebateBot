@@ -26,7 +26,7 @@ import (
 	"upper.io/db.v3/lib/sqlbuilder"
 	"upper.io/db.v3/mysql"
 
-	"../common"
+	"github.com/546669204/RebateBot/common"
 	httpdo "github.com/546669204/golang-http-do"
 	"github.com/fsnotify/fsnotify"
 	"github.com/tidwall/gjson"

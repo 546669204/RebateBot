@@ -14,7 +14,7 @@ import (
 
 	"github.com/extrame/xls"
 
-	"../common"
+	"github.com/546669204/RebateBot/common"
 	httpdo "github.com/546669204/golang-http-do"
 	tk "github.com/546669204/taobaoke"
 	"github.com/tidwall/gjson"

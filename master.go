@@ -17,7 +17,7 @@ import (
 	"sync"
 	"time"
 
-	"./common"
+	"github.com/546669204/RebateBot/common"
 	"github.com/fsnotify/fsnotify"
 	"github.com/tidwall/gjson"
 )
