@@ -110,7 +110,7 @@ func login(data common.Msg) {
 			return
 		*/
 
-		data.Data = fmt.Sprintf(`{"msg":"获取成功","status":1,"qrcode":"%s"}`, tk.BrowserLogin())
+		data.Data = fmt.Sprintf(`{"msg":"获取成功","status":1,"qrcode":%s}`, tk.BrowserLogin())
 		data.Method = "msgreturn"
 		Client.ConnWrite(data)
 		return

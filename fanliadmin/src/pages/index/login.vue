@@ -49,6 +49,7 @@
     <el-dialog :title="dialogLogin.title" :visible.sync="dialogLogin.visible">
       <div>
         <div v-loading="dialogLogin.loading" class="qrcode">
+          <img :src="dialogLogin.src" >
         </div>
         <p>{{dialogLogin.description}}</p>
       </div>
@@ -83,7 +84,8 @@
           visible: false,
           title: "",
           description: "",
-          loading: false
+          loading: false,
+          src:null
         },
         wetimeout: null,
         tbtimeout: null,
@@ -118,7 +120,7 @@
               return;
             }
 
-            document.querySelector(".qrcode").style.background = "url(data:image/png;base64," + res.data.qrcode + ")";
+            this.dialogLogin.src = JSON.parse(res.data.qrcode).src;
             this.dialogLogin.loading = false;
             if (sname == "wechat") {
               this.wechecklogin(res.uuid);
